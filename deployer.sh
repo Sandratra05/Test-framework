@@ -32,6 +32,9 @@ cp -r "$bin/"* "$build/WEB-INF/classes/"
 cp -r "$lib/"* "$build/WEB-INF/lib/"
 cp src/main/webapp/web.xml "$build/WEB-INF/"
 cp src/main/webapp/* "$build/"
+if [ -d "src/main/resources" ]; then
+    cp -r src/main/resources/* "$build/WEB-INF/classes/"
+fi
 
 # ----------- Création du fichier WAR -----------
 echo "Création du fichier WAR..."
