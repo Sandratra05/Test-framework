@@ -1,9 +1,9 @@
 package main.java;
 
-import annotations.UrlMapping;
+import annotations.Url;
 
 public class Test {
-    @UrlMapping("/hello")
+    @Url("/hello")
     public void greeting() {}
     
 }
