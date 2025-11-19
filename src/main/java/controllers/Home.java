@@ -19,4 +19,9 @@ public class Home {
         mv.addAttribute("data", data);
         return mv;
     }
+    
+    @Url("/test/{id}")
+    public String test() {
+        return "Test reussi";
+    }
 }
