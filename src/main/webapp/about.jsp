@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,5 +8,6 @@
 </head>
 <body>
     <h1>Welcome to the About Page</h1>
+    <h1>${data}</h1>
 </body>
 </html>
