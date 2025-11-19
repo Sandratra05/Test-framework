@@ -14,7 +14,9 @@ public class Home {
     @Url("/about")
     public ModelView about() {
         ModelView mv = new ModelView();
-        mv.setView("about.jsp");;
+        String data = "My framework is the best";
+        mv.setView("about.jsp");
+        mv.addAttribute("data", data);
         return mv;
     }
 }
