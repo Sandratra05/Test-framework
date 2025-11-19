@@ -24,7 +24,7 @@ find "$src/main/java/" -name "*.java" -exec cp {} "$src_temp" \;
 # ----------- Compilation -----------
 echo "Compilation des fichiers Java..."
 mkdir -p "$bin"
-javac -cp "$lib/*" -g:vars -d "$bin" "$src_temp"/*.java
+javac -parameters -cp "$lib/*" -g:vars -d "$bin" "$src_temp"/*.java
 
 # ----------- Copie des fichiers compilés et des bibliothèques -----------
 echo "Copie des fichiers compilés et des bibliothèques..."
