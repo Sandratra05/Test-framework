@@ -21,7 +21,7 @@ public class Home {
     }
     
     @Url("/test/{id}")
-    public String test() {
-        return "Test reussi";
+    public String test(int id) {
+        return "Test reussi " + id;
     }
 }
