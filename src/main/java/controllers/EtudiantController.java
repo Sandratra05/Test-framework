@@ -1,6 +1,8 @@
 package main.java.controllers;
 
 import annotations.Controller;
+import annotations.GetMapping;
+import annotations.PostMapping;
 import annotations.RequestParam;
 import annotations.Url;
 import view.ModelView;
@@ -32,5 +34,15 @@ public class EtudiantController {
     @Url("/etudiant/saveWithParam")
     public String save(@RequestParam("id") int idEtudiant, @RequestParam("nom") String nomEtudiant) {
         return "Etudiant " + nomEtudiant + " avec l'id " + idEtudiant + " est bien enregistre. (Avec RequestParam)";
+    }
+
+    @PostMapping("/etudiant/save")
+    public String savePost(@RequestParam("nom") String nomEtudiant, int id) {
+        return "Etudiant " + nomEtudiant + " avec l'id " + id + " est bien enregistre via POST.";
+    }
+
+    @GetMapping("/etudiant/save")
+    public String saveGet(String nom, int id) {
+        return "Etudiant " + nom + " avec l'id " + id + " est bien enregistre via GET.";
     }
 }
