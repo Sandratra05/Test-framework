@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-Test
+    <a href="${pageContext.request.contextPath}/etudiant">Formulaire etudiant</a>
 </body>
 </html>
