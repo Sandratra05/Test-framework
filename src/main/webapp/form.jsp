@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulaire de Methode Get</h1>
-    <form action="${pageContext.request.contextPath}/etudiant/save" method="get">
+    <form action="${pageContext.request.contextPath}/etudiant/saveEtu" method="get">
         <input type="text" name="nom" placeholder="Nom">
         <input type="number" name="id" placeholder="ID">
         <input type="submit" value="Envoyer">
