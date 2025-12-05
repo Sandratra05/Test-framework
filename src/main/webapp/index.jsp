@@ -8,5 +8,6 @@
 <body>
     <a href="${pageContext.request.contextPath}/etudiant">Formulaire etudiant</a>
     <a href="${pageContext.request.contextPath}/form-map">Formulaire etudiant avec Map</a>
+    <a href="${pageContext.request.contextPath}/employe">Formulaire employe</a>
 </body>
 </html>
