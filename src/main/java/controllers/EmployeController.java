@@ -1,7 +1,10 @@
 package main.java.controllers;
 
+import java.util.List;
+
 import annotations.Controller;
 import annotations.GetMapping;
+import annotations.JsonResponse;
 import annotations.PostMapping;
 import main.java.entities.Departement;
 import main.java.entities.Employe;
@@ -24,5 +27,20 @@ public class EmployeController {
     @PostMapping("/employe/save")
     public String saveEmpDept(Employe emp) {
         return "Employe "+ emp.getId() + " <strong>" + emp.getNom() + "</strong> avec le poste <strong>" + emp.getPoste() + "</strong> est bien enregistre via POST. Ainsi que le departement " + emp.getDept().getId() + " du nom de <strong>" + emp.getDept().getNom() + "</strong>.";
+    }
+
+    @JsonResponse
+    @GetMapping("/employeJson")
+    public Employe getEmploye(int id) {
+        return new Employe(id, "John Doe", "Developer", new Departement(1, "IT"));
+    }
+
+    @JsonResponse
+    @GetMapping("/employeJsonList")
+    public List<Employe> getEmployes() {
+        return List.of(
+            new Employe(1, "John Doe", "Developer", new Departement(1, "IT")),
+            new Employe(2, "Jane Smith", "Manager", new Departement(2, "HR"))
+        );
     }
 }
