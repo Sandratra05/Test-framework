@@ -19,7 +19,7 @@ public class EmployeController {
         return mv;
     }
 
-    @PostMapping("/employe/save")
+    @PostMapping("/employe/saveWithArgs")
     public String saveEmp(Employe emp, Departement dept) {
         return "Employe "+ emp.getId() + " <strong>" + emp.getNom() + "</strong> avec le poste <strong>" + emp.getPoste() + "</strong> est bien enregistre via POST. Ainsi que le departement " + dept.getId() + " du nom de <strong>" + dept.getNom() + "</strong>.";
     }
@@ -31,8 +31,8 @@ public class EmployeController {
 
     @JsonResponse
     @GetMapping("/employeJson")
-    public Employe getEmploye(int id) {
-        return new Employe(id, "John Doe", "Developer", new Departement(1, "IT"));
+    public Employe getEmploye() {
+        return new Employe(1, "John Doe", "Developer", new Departement(1, "IT"));
     }
 
     @JsonResponse
