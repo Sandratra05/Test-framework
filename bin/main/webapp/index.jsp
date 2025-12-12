@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="${pageContext.request.contextPath}/etudiant">Formulaire etudiant</a>
-    <a href="${pageContext.request.contextPath}/form-map">Formulaire etudiant avec Map</a>
-    <a href="${pageContext.request.contextPath}/employe">Formulaire employe</a>
+    <p><a href="${pageContext.request.contextPath}/etudiant">Formulaire etudiant</a></p>
+    <p><a href="${pageContext.request.contextPath}/form-map">Formulaire etudiant avec Map</a></p>
+    <p><a href="${pageContext.request.contextPath}/employe">Formulaire employe</a></p>
+    <p><a href="${pageContext.request.contextPath}/employeJson">Employe JSON</a></p>
+    <p><a href="${pageContext.request.contextPath}/employeJsonList">List Employe JSON</a></p>
 </body>
 </html>
