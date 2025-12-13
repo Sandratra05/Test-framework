@@ -32,7 +32,17 @@ public class EmployeController {
     @JsonResponse
     @GetMapping("/employeJson")
     public Employe getEmploye() {
-        return new Employe(1, "John Doe", "Developer", new Departement(1, "IT"));
+        Employe e = new Employe();
+        e.setId(1);
+        e.setNom(null);
+        e.setPoste("Developer");
+        e.setDept(new Departement(1, "IT"));
+
+        if (e.getNom() == null || e.getNom().isEmpty()) {
+            throw new IllegalArgumentException("Nom requis"); // Lève une exception
+        }
+        
+        return e;
     }
 
     @JsonResponse
