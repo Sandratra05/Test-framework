@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulaire Employe multi-arguments</h1>
-    <form action="${pageContext.request.contextPath}/employe/save" method="post">
+    <form action="${pageContext.request.contextPath}/employe/saveWithArgs" method="post">
         <p>
             <input type="number" name="emp.id" placeholder="ID">
         </p>

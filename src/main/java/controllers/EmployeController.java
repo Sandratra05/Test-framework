@@ -19,7 +19,7 @@ public class EmployeController {
         return mv;
     }
 
-    @PostMapping("/employe/save")
+    @PostMapping("/employe/saveWithArgs")
     public String saveEmp(Employe emp, Departement dept) {
         return "Employe "+ emp.getId() + " <strong>" + emp.getNom() + "</strong> avec le poste <strong>" + emp.getPoste() + "</strong> est bien enregistre via POST. Ainsi que le departement " + dept.getId() + " du nom de <strong>" + dept.getNom() + "</strong>.";
     }
