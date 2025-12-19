@@ -11,5 +11,6 @@
     <p><a href="${pageContext.request.contextPath}/employe">Formulaire employe</a></p>
     <p><a href="${pageContext.request.contextPath}/employeJson">Employe JSON</a></p>
     <p><a href="${pageContext.request.contextPath}/employeJsonList">List Employe JSON</a></p>
+    <p><a href="${pageContext.request.contextPath}/form-file">Formulaire fichier</a></p>
 </body>
 </html>
