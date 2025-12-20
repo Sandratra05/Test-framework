@@ -1,5 +1,7 @@
 package main.java.controllers;
 
+import java.util.Map;
+
 import annotations.Controller;
 import annotations.GetMapping;
 import annotations.PostMapping;
@@ -38,5 +40,23 @@ public class FileController {
                 .append("<strong>").append(fileSize).append("</strong>").append(" bytes.").append("</br>");
         }
         return response.toString(); 
+    }
+
+    @PostMapping("/uploadBytes")
+    public String uploadBytes(@RequestParam("files") Map<String, byte[]> fileContents) {
+        //return "Hello";
+        if (fileContents == null || fileContents.isEmpty()) return "No files uploaded.";
+        //return "Uploaded " + fileContents.size() + " files successfully.";
+        StringBuilder response = new StringBuilder();
+        for (Map.Entry<String, byte[]> entry : fileContents.entrySet()) {
+            String fileName = entry.getKey();
+            byte[] content = entry.getValue();
+            if (fileName == null) fileName = "Unknown";  // <-- Ajout : gérer null
+            response.append("File : ")
+                .append("<strong>").append(fileName).append("</strong>")
+                .append(" uploaded successfully with size ")
+                .append("<strong>").append(content != null ? content.length : 0).append("</strong>").append(" bytes.").append("<br>");
+        }
+        return response.toString();
     }
 }
