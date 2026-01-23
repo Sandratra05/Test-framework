@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
+<head><title>Login</title></head>
 <body>
-    <p><a href="${pageContext.request.contextPath}/etudiant">Formulaire etudiant</a></p>
-    <p><a href="${pageContext.request.contextPath}/form-map">Formulaire etudiant avec Map</a></p>
-    <p><a href="${pageContext.request.contextPath}/employe">Formulaire employe</a></p>
-    <p><a href="${pageContext.request.contextPath}/employeJson">Employe JSON</a></p>
-    <p><a href="${pageContext.request.contextPath}/employeJsonList">List Employe JSON</a></p>
-    <p><a href="${pageContext.request.contextPath}/form-file">Formulaire fichier</a></p>
+    <h1>Login</h1>
+    <form action="${pageContext.request.contextPath}/login" method="post">
+        <label>Username: <input type="text" name="username" required></label><br>
+        <label>Password: <input type="password" name="password" required></label><br>
+        <input type="submit" value="Login">
+    </form>
 </body>
 </html>
