@@ -1,0 +1,22 @@
+<%
+    
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Welcome ${sessionScope.user} (Role: ${sessionScope.role})</p>
+    <a href="${pageContext.request.contextPath}/logout">Logout</a>
+    <p><a href="${pageContext.request.contextPath}/etudiant">Formulaire etudiant</a></p>
+    <p><a href="${pageContext.request.contextPath}/form-map">Formulaire etudiant avec Map</a></p>
+    <p><a href="${pageContext.request.contextPath}/employe">Formulaire employe</a></p>
+    <p><a href="${pageContext.request.contextPath}/employeJson">Employe JSON</a></p>
+    <p><a href="${pageContext.request.contextPath}/employeJsonList">List Employe JSON</a></p>
+    <p><a href="${pageContext.request.contextPath}/form-file">Formulaire fichier</a></p>
+</body>
+</html>
