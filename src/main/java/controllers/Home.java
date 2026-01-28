@@ -1,8 +1,8 @@
 package main.java.controllers;
 
-import annotations.Controller;
-import annotations.Url;
-import view.ModelView;
+import mg.ririnina.annotations.Controller;
+import mg.ririnina.annotations.Url;
+import mg.ririnina.view.ModelView;
 
 @Controller
 public class Home {

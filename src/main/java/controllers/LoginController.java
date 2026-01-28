@@ -1,11 +1,11 @@
 package main.java.controllers;
 
-import annotations.Controller;
-import annotations.GetMapping;
-import annotations.PostMapping;
-import annotations.Session;
+import mg.ririnina.annotations.Controller;
+import mg.ririnina.annotations.GetMapping;
+import mg.ririnina.annotations.PostMapping;
+import mg.ririnina.annotations.Session;
 import jakarta.servlet.http.HttpSession;
-import view.ModelView;
+import mg.ririnina.view.ModelView;
 import java.util.Map;
 
 @Controller

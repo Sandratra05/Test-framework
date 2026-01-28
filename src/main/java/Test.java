@@ -1,6 +1,6 @@
 package main.java;
 
-import annotations.Url;
+import mg.ririnina.annotations.Url;
 
 public class Test {
     @Url("/hello")

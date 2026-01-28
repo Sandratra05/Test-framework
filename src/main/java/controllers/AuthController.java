@@ -2,12 +2,12 @@ package main.java.controllers;
 
 import java.util.Map;
 
-import annotations.Authorized;
-import annotations.Controller;
-import annotations.GetMapping;
-import annotations.Role;
-import annotations.Session;
-import view.ModelView;
+import mg.ririnina.annotations.Authorized;
+import mg.ririnina.annotations.Controller;
+import mg.ririnina.annotations.GetMapping;
+import mg.ririnina.annotations.Role;
+import mg.ririnina.annotations.Session;
+import mg.ririnina.view.ModelView;
 
 @Controller
 public class AuthController {

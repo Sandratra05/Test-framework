@@ -2,13 +2,13 @@ package main.java.controllers;
 
 import java.util.List;
 
-import annotations.Controller;
-import annotations.GetMapping;
-import annotations.JsonResponse;
-import annotations.PostMapping;
+import mg.ririnina.annotations.Controller;
+import mg.ririnina.annotations.GetMapping;
+import mg.ririnina.annotations.JsonResponse;
+import mg.ririnina.annotations.PostMapping;
 import main.java.entities.Departement;
 import main.java.entities.Employe;
-import view.ModelView;
+import mg.ririnina.view.ModelView;
 
 @Controller
 public class EmployeController {

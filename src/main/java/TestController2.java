@@ -1,6 +1,6 @@
 package main.java;
 
-import annotations.*;
+import mg.ririnina.annotations.*;
 
 @Controller
 public class TestController2 {

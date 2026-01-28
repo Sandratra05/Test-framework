@@ -1,6 +1,6 @@
 package main.java;
 
-import annotations.Controller;
+import mg.ririnina.annotations.Controller;
 
 public class Main {
     public static void main(String[] args) throws NoSuchMethodException, SecurityException {

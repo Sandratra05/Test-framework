@@ -2,12 +2,12 @@ package main.java.controllers;
 
 import java.util.Map;
 
-import annotations.Controller;
-import annotations.GetMapping;
-import annotations.PostMapping;
-import annotations.RequestParam;
-import annotations.Url;
-import view.ModelView;
+import mg.ririnina.annotations.Controller;
+import mg.ririnina.annotations.GetMapping;
+import mg.ririnina.annotations.PostMapping;
+import mg.ririnina.annotations.RequestParam;
+import mg.ririnina.annotations.Url;
+import mg.ririnina.view.ModelView;
 
 @Controller
 public class EtudiantController {
