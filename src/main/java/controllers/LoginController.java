@@ -21,7 +21,7 @@ public class LoginController {
 
     // Traiter le login (POST /login)
     @PostMapping("/login")
-    public ModelView processLogin(String username, String password, @Session Map<String, Object> session, HttpSession ses) {
+    public ModelView processLogin(String username, String password, @Session Map<String, Object> session) {
         // Simulation de validation (remplace par ta logique réelle)
         if ("admin".equals(username) && "123".equals(password)) {
             // Stocker l'utilisateur en session
